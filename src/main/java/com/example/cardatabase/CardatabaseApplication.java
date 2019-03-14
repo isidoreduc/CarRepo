@@ -48,6 +48,8 @@ public class CardatabaseApplication {
 			repo.save(new Car( "Ferrari", "Testarossa", "red", "ADF-9288", 2011, 100000, owner1));
 			repo.save(new Car( "Jaguar", "Frontano", "blue", "ADF-92008", 2015, 100000, owner1));
 			repo.save(new Car( "Mercedes", "CLK", "white", "ADF-973288", 2010, 100000, owner1));
+			repo.save(new Car( "Dacia", "Duster", "kaki", "ADF-9788", 2019, 100000, owner2));
+
 		};
 	};
 
