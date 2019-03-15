@@ -12,6 +12,8 @@ import com.example.cardatabase.domain.Car;
 import com.example.cardatabase.domain.CarRepository;
 import com.example.cardatabase.domain.Owner;
 import com.example.cardatabase.domain.OwnerRepository;
+import com.example.cardatabase.domain.User;
+import com.example.cardatabase.domain.UserRepository;
 
 @SpringBootApplication
 public class CardatabaseApplication {
@@ -19,9 +21,11 @@ public class CardatabaseApplication {
 	public static final Logger logger = LoggerFactory.getLogger(CardatabaseApplication.class);
 	// inject the CarRepository to be able to use it's CRUD methods
 	@Autowired
-	public CarRepository repo;
+	private CarRepository repo;
 	@Autowired
-	public OwnerRepository orepo;
+	private OwnerRepository orepo;
+	@Autowired
+	private UserRepository urepo;
 
 	public static void main(String[] args) {
 		SpringApplication.run(CardatabaseApplication.class, args);
@@ -50,6 +54,8 @@ public class CardatabaseApplication {
 			repo.save(new Car( "Mercedes", "CLK", "white", "ADF-973288", 2010, 100000, owner1));
 			repo.save(new Car( "Dacia", "Duster", "kaki", "ADF-9788", 2019, 100000, owner2));
 
+			urepo.save(new User("user", "$2a$10$/bpakoLN.5vyV7Hezva24eRPCuf5mB0tyuqpI/uaZOZT/DT8IaaNe", "USER"));
+			urepo.save(new User("admin", "$2a$10$6Q9acce/I.6BaDzlYLuOtO9hioD3N10XNEiRHPyG7Kw7tbc.i9gHS", "ADMIN"));
 		};
 	};
 

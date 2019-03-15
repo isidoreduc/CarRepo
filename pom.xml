@@ -44,13 +44,20 @@
 			<groupId>org.mariadb.jdbc</groupId>
 			<artifactId>mariadb-java-client</artifactId>
 		</dependency>
-		
-		<!--  By default, Spring Data REST finds all public repositories from the 
-		application and creates automatically RESTful Web Services for your entities. 
-		You don't even need controllers :) -->
+
+		<!-- By default, Spring Data REST finds all public repositories from the 
+			application and creates automatically RESTful Web Services for your entities. 
+			You don't even need controllers :) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>
+		<!-- Spring Security - provides out of the box security for the API
+		when trying to access API, there is a login page (Basic Security): 
+		user: "user", pass: find it in the console when starting the API(Using generated security password: ...) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 
 	</dependencies>
