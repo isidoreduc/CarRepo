@@ -52,13 +52,22 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
-		<!-- Spring Security - provides out of the box security for the API
-		when trying to access API, there is a login page (Basic Security): 
-		user: "user", pass: find it in the console when starting the API(Using generated security password: ...) -->
+		<!-- Spring Security - provides out of the box security for the API when 
+			trying to access API, there is a login page (Basic Security): user: "user", 
+			pass: find it in the console when starting the API(Using generated security 
+			password: ...) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+		<!-- JSON Web Token, used for security with we have to interface with a front end library - React
+		or framework - Angular etc. -->
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.0</version>
+		</dependency>
+
 
 	</dependencies>
 
