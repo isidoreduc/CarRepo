@@ -1,6 +1,5 @@
 package com.example.cardatabase.domain;
 
-//import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -34,7 +33,7 @@ public class Car {
 			this.owner = owner;
 		}
 	
-<<<<<<< HEAD
+
 	public Car(String brand, String model, String color, String registerNumber, int year, int price) {
 		this.brand = brand;
 		this.model = model;
@@ -54,9 +53,6 @@ public class Car {
 		this.id = id;
 	}
 
-=======
-	
->>>>>>> 61e6a3f5a428fb57668f93f74dd9f8b8acd06c72
 	public String getColor() {
 		return color;
 	}
