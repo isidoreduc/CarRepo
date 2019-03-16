@@ -34,7 +34,29 @@ public class Car {
 			this.owner = owner;
 		}
 	
+<<<<<<< HEAD
+	public Car(String brand, String model, String color, String registerNumber, int year, int price) {
+		this.brand = brand;
+		this.model = model;
+		this.color = color;
+		this.registerNumber = registerNumber;
+		this.year = year;
+		this.price = price;
+	}
 	
+	
+	
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+=======
+	
+>>>>>>> 61e6a3f5a428fb57668f93f74dd9f8b8acd06c72
 	public String getColor() {
 		return color;
 	}
